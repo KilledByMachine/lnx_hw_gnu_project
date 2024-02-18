@@ -1,0 +1,8 @@
+main: main.c
+    gcc -o $@ $^
+
+src1: src1.c
+    gcc -o $@ $^
+
+clean:
+    rm -f main src1

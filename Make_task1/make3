@@ -1,0 +1,11 @@
+SRCS := main.c src1.c
+OBJS := $(SRCS:.c=.o)
+EXEC := main
+
+all: $(EXEC)
+
+$(EXEC): $(OBJS)
+    gcc -o $@ $^
+
+clean:
+    rm -f $(EXEC) $(OBJS)
